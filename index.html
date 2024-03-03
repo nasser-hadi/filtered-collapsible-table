@@ -1,0 +1,114 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Filtered_Collapsible_Table</title>
+</head>
+
+<body>
+
+  <input type="text" id="inputForSearch" onkeyup="FilterTable()" placeholder="Search for all columns ..">
+
+  <table id="dataTable">
+    <thead>
+      <tr class="data-header">
+        <th>#</th>
+        <th>Name</th>
+        <th>Job</th>
+        <th>Country</th>
+        <th>Age</th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!-- first data row -->
+      <tr class="data-row">
+        <th>1</th>
+        <td>Nasser Hadi</td>
+        <td>Developer</td>
+        <td>US</td>
+        <td>39</td>
+        <td> <button href="#" class="up-down"></button></td>
+      </tr>
+      <tr class="data-content">
+        <th></th>
+        <td colspan="4">
+          <div class="hidden-content">
+            <p>Lorem 1st ipsum dolor sit amet consectetur, adipisicing elit. Aut recusandae nam dolore commod imagn i.Cupidita tedign issimos test </p>
+            <p>Lorem 1st ipsum dolor sit amet consectetur, adipisicing elit. Aut recusandae nam dolore commod imagn i.Cupidita tedign issimos test </p>
+            <p>Lorem 1st ipsum dolor sit amet consectetur, adipisicing elit. Aut recusandae nam dolore commod imagn i.Cupidita tedign issimos test </p>
+          </div>
+        </td>
+        <td></td>
+      </tr>
+      <!-- second data row -->
+      <tr class="data-row">
+        <th>2</th>
+        <td>Jack Brown</td>
+        <td>DBA</td>
+        <td>UK</td>
+        <td>25</td>
+        <td> <button href="#" class="up-down"></button></td>
+      </tr>
+      <tr class="data-content">
+        <th></th>
+        <td colspan="4">
+          <div class="hidden-content ">
+            <p>Lorem 2nd ipsum dolor sit amet consectetur, adipisicing elit. Aut recusandae nam dolore commod imagn i.Cupidita tedign issimos test </p>
+            <p>Lorem 2nd ipsum dolor sit amet consectetur, adipisicing elit. Aut recusandae nam dolore commod imagn i.Cupidita tedign issimos test </p>
+            <p>Lorem 2nd ipsum dolor sit amet consectetur, adipisicing elit. Aut recusandae nam dolore commod imagn i.Cupidita tedign issimos test </p>
+          </div>
+        </td>
+        <td></td>
+      </tr>
+      <!-- third data row -->
+      <tr class="data-row">
+        <th>3</th>
+        <td>Mehmet Tural</td>
+        <td>Designer</td>
+        <td>Turkey</td>
+        <td>28</td>
+        <td> <button href="#" class="up-down"></button></td>
+      </tr>
+      <tr class="data-content">
+        <th></th>
+        <td colspan="4">
+          <div class="hidden-content">
+            <p>Lorem 3rd ipsum dolor sit amet consectetur, adipisicing elit. Aut recusandae nam dolore commod imagn i.Cupidita tedign issimos test </p>
+            <p>Lorem 3rd ipsum dolor sit amet consectetur, adipisicing elit. Aut recusandae nam dolore commod imagn i.Cupidita tedign issimos test </p>
+            <p>Lorem 3rd ipsum dolor sit amet consectetur, adipisicing elit. Aut recusandae nam dolore commod imagn i.Cupidita tedign issimos test </p>
+          </div>
+        </td>
+        <td></td>
+      </tr>
+      <!-- forth data row -->
+      <tr class="data-row">
+        <th>4</th>
+        <td>Kim Sung Uoh</td>
+        <td>Developer</td>
+        <td>South Korea</td>
+        <td>30</td>
+        <td> <button href="#" class="up-down"></button></td>
+      </tr>
+      <tr class="data-content">
+        <th></th>
+        <td colspan="4">
+          <div class="hidden-content">
+            <p>Lorem 4th ipsum dolor sit amet consectetur, adipisicing elit. Aut recusandae nam dolore commod imagn i.Cupidita tedign issimos test </p>
+            <p>Lorem 4th ipsum dolor sit amet consectetur, adipisicing elit. Aut recusandae nam dolore commod imagn i.Cupidita tedign issimos test </p>
+            <p>Lorem 4th ipsum dolor sit amet consectetur, adipisicing elit. Aut recusandae nam dolore commod imagn i.Cupidita tedign issimos test </p>
+          </div>
+        </td>
+        <td></td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
