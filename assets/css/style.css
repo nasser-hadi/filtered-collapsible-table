@@ -2,7 +2,7 @@ body {
   /* padding: 0; */
   /* margin: 0; */
 }
-
+ 
 #inputForSearch {
   background-image: url('../icons/search.svg');
   /* Add a search icon to input */
@@ -72,6 +72,7 @@ body {
   /* Add padding */
 }
 
+
 .data-row {
   height: 45px;
   /* Add a bottom border to all table rows */
@@ -107,6 +108,9 @@ body {
   background-size: 20px;
 
   text-align: center;
+
+
+  
   font-size: 18px;
   border-radius: 50%;
   transition: transform 0.2s ease;
@@ -119,7 +123,7 @@ button.up-down:hover{
   background-color: #a7a0a0;
 }
 
-button.collapse {
+button.down {
   transform: rotate(180deg);
 }
 
