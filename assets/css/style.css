@@ -20,6 +20,14 @@ body {
   /* Add a grey border */
   margin-bottom: 12px;
   /* Add some space below the input */
+  border-radius:5px;
+  transition:all 0.2s;
+  outline: none;
+}
+
+#inputForSearch:focus {
+  border: 1px solid #3a5bd3;
+  box-shadow: 0 0 5px 0 #7d90de;
 }
 
 #dataTable {
