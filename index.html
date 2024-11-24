@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/style.css">
-  <title>Filtered_Collapsible_Table</title>
+  <title>table-collapsible-filtered</title>
 </head>
 
 <body>
@@ -23,88 +23,70 @@
       </tr>
     </thead>
 
-    <tbody>
+    <tbody id="tbody01">
       <!-- first data row -->
-      <tr class="data-row">
+      <!-- first data title -->
+      <tr class="data-title">
         <th>1</th>
         <td>Nasser Hadi</td>
         <td>Developer</td>
         <td>US</td>
         <td>39</td>
-        <td> <button type ="button" class="up-down"></button></td>
+        <td> <button type="button" class="up-down down"></button></td>
       </tr>
-      <tr class="data-content">
+      <!-- first data content -->
+      <tr class="data-content collapse">
         <th></th>
         <td colspan="4">
-          <div class="hidden-content">
-            <p>Lorem 1st ipsum dolor sit amet consectetur, adipisicing elit. Aut recusandae nam dolore commod imagn i.Cupidita tedign issimos test </p>
-            <p>Lorem 1st ipsum dolor sit amet consectetur, adipisicing elit. Aut recusandae nam dolore commod imagn i.Cupidita tedign issimos test </p>
-            <p>Lorem 1st ipsum dolor sit amet consectetur, adipisicing elit. Aut recusandae nam dolore commod imagn i.Cupidita tedign issimos test </p>
+          <div class="hidden-content ">
+            <p>Lorem ipsum 1st_row_1st_col.<br>HTML is the standard markup language for Web pages.</p>
+            <p>Lorem ipsum 1st_row_2nd_col.<br>CSS is the language we use to style a Web page.</p>
+            <p>Lorem ipsum 1st_row_3rd_col.<br>JavaScript is the Programming Language for the Web.</p>
           </div>
         </td>
-        <td></td>
       </tr>
       <!-- second data row -->
-      <tr class="data-row">
+      <!-- second data title -->
+      <tr class="data-title">
         <th>2</th>
         <td>Jack Brown</td>
         <td>DBA</td>
         <td>UK</td>
         <td>25</td>
-        <td> <button type ="button" class="up-down"></button></td>
+        <td> <button type="button" class="up-down down"></button></td>
       </tr>
-      <tr class="data-content">
+      <!-- second data content -->
+      <tr class="data-content collapse">
         <th></th>
         <td colspan="4">
-          <div class="hidden-content ">
-            <p>Lorem 2nd ipsum dolor sit amet consectetur, adipisicing elit. Aut recusandae nam dolore commod imagn i.Cupidita tedign issimos test </p>
-            <p>Lorem 2nd ipsum dolor sit amet consectetur, adipisicing elit. Aut recusandae nam dolore commod imagn i.Cupidita tedign issimos test </p>
-            <p>Lorem 2nd ipsum dolor sit amet consectetur, adipisicing elit. Aut recusandae nam dolore commod imagn i.Cupidita tedign issimos test </p>
+          <div class="hidden-content">
+            <p>Lorem ipsum 2nd_row_1st_col.<br>SQL is a standard language for accessing and manipulating databases. </p>
+            <p>Lorem ipsum 2nd_row_2nd_col.<br>C# is an object-oriented programming language that runs on the .NET Framework.</p>
+            <p>Lorem ipsum 2nd_row_3rd_col.<br>Bootstrap is the CSS Framework for developing responsive and mobile-first websites.</p>
           </div>
         </td>
-        <td></td>
       </tr>
       <!-- third data row -->
-      <tr class="data-row">
+      <!-- third data title -->
+      <tr class="data-title">
         <th>3</th>
         <td>Mehmet Tural</td>
         <td>Designer</td>
         <td>Turkey</td>
         <td>28</td>
-        <td> <button type ="button" class="up-down"></button></td>
+        <td> <button type="button" class="up-down down"></button></td>
       </tr>
-      <tr class="data-content">
+      <!-- third data content -->
+      <tr class="data-content collapse">
         <th></th>
         <td colspan="4">
           <div class="hidden-content">
-            <p>Lorem 3rd ipsum dolor sit amet consectetur, adipisicing elit. Aut recusandae nam dolore commod imagn i.Cupidita tedign issimos test </p>
-            <p>Lorem 3rd ipsum dolor sit amet consectetur, adipisicing elit. Aut recusandae nam dolore commod imagn i.Cupidita tedign issimos test </p>
-            <p>Lorem 3rd ipsum dolor sit amet consectetur, adipisicing elit. Aut recusandae nam dolore commod imagn i.Cupidita tedign issimos test </p>
+            <p>Lorem ipsum 3rd_row_1st_col.<br>Python is a programming language can be used on a server to create web applications.</p>
+            <p>Lorem ipsum 3rd_row_2nd_col.<br>C++ is a cross-platform programming language that can be used to create high-performance applications.</p>
+            <p>Lorem ipsum 3rd_row_3rd_col.<br>Git is a version control system.</p>
           </div>
         </td>
-        <td></td>
       </tr>
-      <!-- forth data row -->
-      <tr class="data-row">
-        <th>4</th>
-        <td>Kim Sung Uoh</td>
-        <td>Developer</td>
-        <td>South Korea</td>
-        <td>30</td>
-        <td> <button type ="button" class="up-down"></button></td>
-      </tr>
-      <tr class="data-content">
-        <th></th>
-        <td colspan="4">
-          <div class="hidden-content">
-            <p>Lorem 4th ipsum dolor sit amet consectetur, adipisicing elit. Aut recusandae nam dolore commod imagn i.Cupidita tedign issimos test </p>
-            <p>Lorem 4th ipsum dolor sit amet consectetur, adipisicing elit. Aut recusandae nam dolore commod imagn i.Cupidita tedign issimos test </p>
-            <p>Lorem 4th ipsum dolor sit amet consectetur, adipisicing elit. Aut recusandae nam dolore commod imagn i.Cupidita tedign issimos test </p>
-          </div>
-        </td>
-        <td></td>
-      </tr>
-
     </tbody>
   </table>
 

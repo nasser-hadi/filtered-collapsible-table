@@ -1,8 +1,6 @@
-body {
-  /* padding: 0; */
-  /* margin: 0; */
-}
- 
+
+/* ________________________________________________________input style_____________________________________________ */
+
 #inputForSearch {
   background-image: url('../icons/search.svg');
   /* Add a search icon to input */
@@ -20,8 +18,8 @@ body {
   /* Add a grey border */
   margin-bottom: 12px;
   /* Add some space below the input */
-  border-radius:5px;
-  transition:all 0.2s;
+  border-radius: 5px;
+  transition: all 0.2s;
   outline: none;
 }
 
@@ -30,25 +28,22 @@ body {
   box-shadow: 0 0 5px 0 #7d90de;
 }
 
+/* _________________________________________________________table style_______________________________________ */
+
 #dataTable {
   border-collapse: collapse;
   /* Collapse borders */
   width: 100%;
   /* Full-width */
-  border: 1px solid #7e7e7e;
-  /* Add a grey border */
   font-size: 18px;
   /* Increase font-size */
+  border-radius: 5px;
 }
 
 #dataTable thead tr {
   background-color: #a19c9c;
+  border: 1px solid #7e7e7e;
   height: 45px;
-}
-
-#dataTable tbody tr td,
-#dataTable thead tr th {
-  text-align: center;
 }
 
 #dataTable thead tr th:nth-child(1) {
@@ -66,60 +61,86 @@ body {
 #dataTable thead tr th:nth-child(4) {
   width: 25%;
 }
+
 #dataTable thead tr th:nth-child(5) {
   width: 10%;
 }
+
 #dataTable thead tr th:nth-child(6) {
   width: 10%;
 }
 
 #dataTable tbody tr td div>p {
-  text-align: left;
   /* Left-align text */
-  padding: 0 20px;
+  text-align: left;
   /* Add padding */
+  padding: 0 20px;
 }
 
+/* _________________________________________________table row style_________________________________________________________ */
 
-.data-row {
+.data-title {
   height: 45px;
+  background-color: #f1f1f1;
   /* Add a bottom border to all table rows */
-  border-top: 1px solid #7e7e7e;
+  border-right: 1px solid #7e7e7e;
+  border-left: 1px solid #7e7e7e;
   border-bottom: 1px solid #7e7e7e;
   cursor: pointer;
-  /* padding: 18px; */
-  outline: none;
+  text-align: center;
 }
 
-#dataTable tbody tr.data-row:hover {
+#dataTable thead tr th {
+  text-align: center;
+}
+
+#dataTable tbody tr .data-title td {
+  text-align: start;
+}
+
+tr.data-title:hover {
   /* Add a grey background color to the table header and on hover */
-  background-color: #f1f1f1;
+  background-color: #ece5e5;
+}
+
+/* _______________________________________________table contant style_______________________________________________________ */
+
+.data-content {
+  /* Add a bottom border to all table rows */
+  border-right: 1px solid #7e7e7e;
+  border-left: 1px solid #7e7e7e;
+  border-bottom: 1px solid #7e7e7e;
+  cursor: pointer;
 }
 
 .hidden-content {
-  /* display:none; */
-  height: 0;
-  overflow: hidden;
   display: flex;
   flex-direction: row;
   transition: height 0.3s ease-out;
 }
 
-.up-down {
+tr.collapse>td>div {
+  height: 0;
+  overflow: hidden;
+}
+
+tr.expand>td>div {
+  height: 100px;
+  overflow: hidden;
+}
+
+
+/* _________________________________________________up down button__________________________________________________________ */
+
+button.up-down {
   width: 30px;
   height: 30px;
   background-image: url('../icons/down.svg');
   background-repeat: no-repeat;
   background-color: transparent;
-  /* background-color: gray; */
   background-position: 5px 6px;
   background-size: 20px;
-
-  text-align: center;
-
-
   
-  font-size: 18px;
   border-radius: 50%;
   transition: transform 0.2s ease;
   border: none;
@@ -127,14 +148,12 @@ body {
   cursor: pointer;
 }
 
-button.up-down:hover{
+button.up-down:hover {
   background-color: #a7a0a0;
 }
 
-button.down {
-  transform: rotate(180deg);
-}
+button.down{}
 
-tr.collapse>td>div {
-  height: 100px;
+button.up {
+  transform: rotate(180deg);
 }
