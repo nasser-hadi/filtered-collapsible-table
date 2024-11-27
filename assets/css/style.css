@@ -1,23 +1,14 @@
-
 /* ________________________________________________________input style_____________________________________________ */
 
 #inputForSearch {
   background-image: url('../icons/search.svg');
-  /* Add a search icon to input */
   background-position: 10px 12px;
-  /* Position the search icon */
   background-repeat: no-repeat;
-  /* Do not repeat the icon image */
   width: 100%;
-  /* Full-width */
   font-size: 16px;
-  /* Increase font-size */
   padding: 12px 20px 12px 40px;
-  /* Add some padding */
   border: 1px solid #7e7e7e;
-  /* Add a grey border */
   margin-bottom: 12px;
-  /* Add some space below the input */
   border-radius: 5px;
   transition: all 0.2s;
   outline: none;
@@ -32,11 +23,8 @@
 
 #dataTable {
   border-collapse: collapse;
-  /* Collapse borders */
   width: 100%;
-  /* Full-width */
   font-size: 18px;
-  /* Increase font-size */
   border-radius: 5px;
 }
 
@@ -49,31 +37,23 @@
 #dataTable thead tr th:nth-child(1) {
   width: 5%;
 }
-
 #dataTable thead tr th:nth-child(2) {
   width: 25%;
 }
-
 #dataTable thead tr th:nth-child(3) {
   width: 25%;
 }
-
 #dataTable thead tr th:nth-child(4) {
   width: 25%;
 }
-
 #dataTable thead tr th:nth-child(5) {
   width: 10%;
 }
-
 #dataTable thead tr th:nth-child(6) {
   width: 10%;
 }
-
 #dataTable tbody tr td div>p {
-  /* Left-align text */
   text-align: left;
-  /* Add padding */
   padding: 0 20px;
 }
 
@@ -82,7 +62,6 @@
 .data-title {
   height: 45px;
   background-color: #f1f1f1;
-  /* Add a bottom border to all table rows */
   border-right: 1px solid #7e7e7e;
   border-left: 1px solid #7e7e7e;
   border-bottom: 1px solid #7e7e7e;
@@ -99,14 +78,12 @@
 }
 
 tr.data-title:hover {
-  /* Add a grey background color to the table header and on hover */
   background-color: #ece5e5;
 }
 
 /* _______________________________________________table contant style_______________________________________________________ */
 
 .data-content {
-  /* Add a bottom border to all table rows */
   border-right: 1px solid #7e7e7e;
   border-left: 1px solid #7e7e7e;
   border-bottom: 1px solid #7e7e7e;
@@ -129,7 +106,6 @@ tr.expand>td>div {
   overflow: hidden;
 }
 
-
 /* _________________________________________________up down button__________________________________________________________ */
 
 button.up-down {
@@ -140,7 +116,6 @@ button.up-down {
   background-color: transparent;
   background-position: 5px 6px;
   background-size: 20px;
-  
   border-radius: 50%;
   transition: transform 0.2s ease;
   border: none;
@@ -151,8 +126,6 @@ button.up-down {
 button.up-down:hover {
   background-color: #a7a0a0;
 }
-
-button.down{}
 
 button.up {
   transform: rotate(180deg);

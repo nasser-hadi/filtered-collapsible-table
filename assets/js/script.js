@@ -81,3 +81,23 @@ function FilterTable() {
     }
   }
 }
+
+// highlight section
+
+let inputT = document.getElementById('inputForSearch');
+let elmntAll = document.getElementsByClassName('hi-li');
+let elm, txtValue;
+inputT.addEventListener('input', (event) => {
+  const inputText = event.target.value;
+  for (i = 0; i < elmntAll.length; i++) {    
+      elm = elmntAll[i];
+      if (elm) {
+        txtValue = elm.textContent || elm.innerText;
+        const regexInputText = new RegExp(inputText, 'gi');
+        
+        txtValue = txtValue.replace(/(<mark>|<\/mark>)/gim, '');
+        const newText=txtValue.replace(regexInputText,'<mark>$&</mark>');
+        elm.innerHTML=newText;
+      }
+    }
+  });
