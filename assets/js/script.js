@@ -139,7 +139,7 @@ function FilterTable() {
 
 
 let inputT = document.getElementById('inputForSearch');
-let elmntAll = document.getElementsByClassName('hi-li');
+let elmntAll = document.getElementsByClassName('marked');
 let elm, txtValue;
 inputT.addEventListener('input', (event) => {
    const inputText = event.target.value;
@@ -150,7 +150,7 @@ inputT.addEventListener('input', (event) => {
          const regexInputText = new RegExp(inputText, 'gi');
 
          txtValue = txtValue.replace(/(<mark>|<\/mark>)/gim, '');
-         const newText = txtValue.replace(regexInputText, '<hi-li>$&</hi-li>');
+         const newText = txtValue.replace(regexInputText, '<mark>$&</mark>');
          elm.innerHTML = newText;
       }
    }
